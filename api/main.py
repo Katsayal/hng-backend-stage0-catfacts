@@ -68,3 +68,11 @@ async def read_profile():
         "timestamp": timestamp,
         "fact": cat_fact 
     }
+
+@app.get("/")
+def read_root():
+    return {
+        "message": "Welcome to the Backend Wizards Stage 0 API.",
+        "instructions": "Navigate to the /me endpoint to see the dynamic profile information and a random cat fact.",
+        "endpoint": "/me"
+    }

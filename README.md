@@ -58,12 +58,17 @@ pip install fastapi uvicorn httpx
 Run the application using Uvicorn from the root project directory (assuming your main application file is at `api/main.py`):
 
 ```bash
-uvicorn api.main:app --reload --host 0.0.0.0 --port 8000
+uvicorn api.main:app --reload
 ```
 
 The server will start, typically running on `http://127.0.0.1:8000`.
 
-### 2\. Test the Endpoint
+### 2\. Access the Endpoint
+
+Access the  endpoint `\me`.
+
+
+### 3\. Test the Endpoint
 
 Access the required endpoint using your browser, Postman, or `curl`:
 
