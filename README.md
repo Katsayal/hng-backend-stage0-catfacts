@@ -22,19 +22,18 @@ You must have **Python 3.10** or higher installed.
 ### 1\. Clone the Repository
 
 ```bash
-# Replace <YOUR_REPO_LINK> with the actual link
-git clone <YOUR_REPO_LINK>
+git clone https://github.com/Katsayal/hng-backend-stage0-catfacts.git
 cd 1catfacts
 ```
 
 ### 2\. Create and Activate Virtual Environment
 
 ```bash
-# Create the environment
+# Create virtual environment (optional)
 python -m venv venv
 
 # Activate the environment (on Windows PowerShell)
-.\venv\Scripts\Activate.ps1
+.\venv\Scripts\Activate
 
 # Activate the environment (on Linux/macOS or Git Bash)
 source venv/bin/activate
@@ -47,6 +46,11 @@ This project requires `fastapi`, `uvicorn`, and `httpx`.
 ```bash
 # Install packages
 pip install fastapi uvicorn httpx
+```
+or
+
+```bash
+pip install -r requirements.txt
 ```
 
 -----
